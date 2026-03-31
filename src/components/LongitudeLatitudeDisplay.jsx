@@ -1,7 +1,7 @@
-import { useGeolocation } from "../hooks/useGeolocation"; // Importa o hook [cite: 353]
+import { useGeolocation } from "../hooks/useGeolocation"; 
 
 export const LongitudeLatitudeDisplay = () => {
-  const currentLocation = useGeolocation(); // Usa o hook [cite: 354]
+  const currentLocation = useGeolocation(); 
 
   if (!currentLocation || !currentLocation.latitude) {
     return <p>{"Sorry, location is currently unavailable"}</p>;
